@@ -6,7 +6,7 @@ conda create -n wineq1 python=3.7 -y
 
 activate env
 ```bash
-conda activate wineq1
+conda activate wineq2
 ```
 
 created a req file
@@ -22,9 +22,7 @@ https://drive.google.com/drive/folders/18zqQiCJVgF7uzXgfbIJ-04zgz1ItNfF5?usp=sha
 ```bash
 git init
 ```
-```bash
-dvc init 
-```
+
 if dvc does not intiate then downgrade the fsspec
 ``` bash
 pip install fsspec==2022.1.0
@@ -97,8 +95,7 @@ mkdir artifacts
 ```
 
 mlflow server command -
-
-mlflow server 
---backend-store-uri sqlite:///mlflow.db
---default-artifact-root ./artifacts
---host 0.0.0.0 -p 1234 
+mlflow server
+    --backend-store-uri sqlite:///mlflow.db
+    --default-artifact-root ./artifacts
+    --host 0.0.0.0 -p 1234
