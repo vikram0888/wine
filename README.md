@@ -25,6 +25,10 @@ git init
 ```bash
 dvc init 
 ```
+if dvc does not intiate then downgrade the fsspec
+``` bash
+pip install fsspec==2022.1.0
+```
 ```bash
 dvc add data_given/winequality.csv
 ```
@@ -45,7 +49,18 @@ git remote add origin https://github.com/vikram0888/wine.git
 git branch -M main
 git push -u origin main
 ```
-
+used to track the inputs and outputs of data science experiments, version your data, and collaborate
+```bash
+dvc repro
+```
+compare the metrics of two different versions of a data set
+``` bash
+dvc metrics diff
+```
+show metrics
+```bash
+dvc metrics show
+```
 tox command -
 ```bash
 tox
