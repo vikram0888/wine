@@ -40,7 +40,7 @@ git commit -m "first commit"
 oneliner updates  for readme
 
 ```bash
-git add . && git commit -m "update Readme.md"
+git add . && git commit -m  "update" && git push origin main-mlflow
 ```
 ```bash
 git remote add origin https://github.com/vikram0888/wine.git
@@ -90,7 +90,7 @@ install mlflow
 pip install mlflow
 ```
 create an artifcats folder
-```bash
+```bash 
 mkdir artifacts
 ```
 
