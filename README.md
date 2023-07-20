@@ -83,3 +83,22 @@ build your own package commands-
 ```bash
 python setup.py sdist bdist_wheel
 ```
+Switched to a new branch 'main-mlflow'
+```bash
+git checkout -b main-mlflow
+```
+install mlflow
+``` bash
+pip install mlflow
+```
+create an artifcats folder
+```bash
+mkdir artifacts
+```
+
+mlflow server command -
+
+mlflow server 
+--backend-store-uri sqlite:///mlflow.db
+--default-artifact-root ./artifacts
+--host 0.0.0.0 -p 1234 
